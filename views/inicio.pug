@@ -1,0 +1,33 @@
+extends ./layout/index
+block slider
+    .slider 
+        h1 Roma, Italia
+        em aventura
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Nullam eget purus et dolor imperdiet luctus. Etiam massa purus, faucibus vel interdum vel, suscipit pellentesque nibh. Proin eu quam at sapien vehicula accumsan nec nec mauris. Ut id euismod ligula, a sagittis odio. Suspendisse in orci nibh. Pellentesque habitant morbi tristique.
+                p Aenean vitae nisi lectus. Proin aliquet ut sem in tristique. Sed scelerisque nisl ut diam scelerisque, et vulputate orci pellentesque. Integer vestibulum ante nibh, sed pretium enim commodo vitae. Proin mi risus, lacinia eu tincidunt sit amet.
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros" class='img-fluid')
+
+        include ./layout/bloque_viajes
+
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Cánada 
+                        p.fecha 13 de Octubre del 2023 - 25 de Octubre del 2023
+                        p.precio $2.500 USD
+
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
+
+            
